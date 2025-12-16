@@ -1,127 +1,100 @@
-💰 FinControl - Dashboard Financeiro
+# 💰 FinControl - Dashboard Financeiro
 
-Um dashboard financeiro moderno, modular e responsivo para gestão de receitas, despesas e clientes.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-📸 Preview
+> Um dashboard financeiro moderno e responsivo para gestão de receitas, despesas e clientes.
 
-<!-- Dica: Tire um print da sua tela, salve como 'preview.png' na pasta 'public' e descomente a linha abaixo -->
+## 📸 Preview
 
-<!--  -->
+![Preview do Projeto](https://via.placeholder.com/800x400?text=Preview+do+FinControl+Dashboard)
 
-<img src="https://www.google.com/search?q=https://via.placeholder.com/800x400%3Ftext%3DPreview%2Bdo%2BFinControl%2BDashboard" alt="Preview do Projeto" width="100%">
+## 🚀 Sobre o Projeto
 
-🚀 Sobre o Projeto
+O **FinControl** é uma aplicação front-end desenvolvida para simular o controle financeiro de uma empresa ou freelancer. O objetivo principal deste projeto foi aplicar conceitos de modularização com **React**, tipagem estática com **TypeScript** e criação de visualizações de dados interativas.
 
-O FinControl é uma aplicação front-end desenvolvida para simular o controle financeiro de uma pequena empresa ou freelancer.
+### Principais Funcionalidades
 
-O objetivo principal deste projeto foi refatorar uma aplicação monolítica, aplicando conceitos de Clean Code e Arquitetura Modular com React e TypeScript, garantindo escalabilidade e facilidade de manutenção.
+- 📊 **Dashboard Interativo:** KPIs de Receita, Despesa e Lucro em tempo real.
+- 📈 **Gráficos Visuais:**
+  - Evolução financeira semestral (AreaChart).
+  - Distribuição de despesas por categoria (PieChart).
+- 💸 **Gestão de Transações:** Listagem com filtros por status (Pago, Pendente, Atrasado).
+- 👥 **Gestão de Clientes:** Interface para visualizar e gerenciar a base de clientes.
+- 📱 **Design Responsivo:** Layout adaptável para desktop e mobile com Menu Lateral (Sidebar).
 
-Principais Funcionalidades
+## 🛠️ Tecnologias Utilizadas
 
-📊 Dashboard Interativo: Visualização de KPIs (Receita, Despesa, Lucro) em tempo real.
+- **[React](https://reactjs.org/)** - Biblioteca para construção de interfaces.
+- **[Vite](https://vitejs.dev/)** - Build tool rápida e leve.
+- **[TypeScript](https://www.typescriptlang.org/)** - JavaScript com superpoderes (tipagem).
+- **[Bootstrap 5](https://getbootstrap.com/)** - Framework CSS para estilização e grid.
+- **[Recharts](https://recharts.org/)** - Biblioteca para criação de gráficos compostos.
+- **[Lucide React](https://lucide.dev/)** - Ícones leves e modernos.
 
-📈 Visualização de Dados:
+## 📂 Estrutura do Projeto
 
-Gráfico de área para evolução financeira semestral.
+O projeto segue uma arquitetura modular para facilitar a manutenção e escalabilidade:
 
-Gráfico de pizza para distribuição de despesas por categoria.
-
-💸 Gestão de Transações: Listagem detalhada com filtros de status (Pago, Pendente, Atrasado).
-
-👥 Módulo de Clientes: Interface para visualização, adição e gestão de clientes.
-
-📱 Interface Responsiva: Layout adaptável com Sidebar colapsável para mobile e desktop.
-
-🛠️ Tecnologias Utilizadas
-
-React - Biblioteca JavaScript para construção de interfaces.
-
-Vite - Ferramenta de build rápida e leve.
-
-TypeScript - Superset do JavaScript que adiciona tipagem estática.
-
-Bootstrap 5 - Framework CSS para estilização ágil e responsiva.
-
-Recharts - Biblioteca de gráficos compostos para React.
-
-Lucide React - Biblioteca de ícones moderna e leve.
-
-📂 Estrutura do Projeto
-
-O projeto foi organizado seguindo boas práticas de separação de responsabilidades:
-
+```bash
 src/
-├── components/       # Componentes de UI
+├── components/       # Componentes reutilizáveis
 │   ├── layout/       # Componentes estruturais (Sidebar, Header)
-│   └── shared/       # Componentes reutilizáveis (Cards, Modais)
+│   └── shared/       # Componentes genéricos (Cards, Modais)
 ├── data/             # Mock Data (Dados simulados para desenvolvimento)
-├── hooks/            # Hooks customizados do React
-├── pages/            # Visualizações principais (Dashboard, Financeiro, Clientes)
-├── types/            # Definições de interfaces e tipos TypeScript
-├── utils/            # Funções utilitárias e formatadores (moeda, data)
-├── App.tsx           # Componente raiz e orquestrador de estado
-└── main.tsx          # Ponto de entrada da aplicação
+├── pages/            # Páginas da aplicação (Dashboard, Financeiro, Clientes)
+├── types/            # Definições de tipos TypeScript (Interfaces)
+├── utils/            # Funções utilitárias e formatadores
+├── App.tsx           # Componente raiz e gerenciamento de estado global
+└── main.tsx          # Ponto de entrada
 
+```
 
 ⚡ Como Rodar o Projeto
-
 Pré-requisitos
 
-Certifique-se de ter o Node.js instalado em sua máquina.
+Você precisa ter o Node.js instalado em sua máquina.
+Passo a passo
 
-Instalação
-
-Clone o repositório
+    Clone o repositório
+    Bash
 
 git clone [https://github.com/sergiotim/fincontrol-dashboard.git](https://github.com/sergiotim/fincontrol-dashboard.git)
 
-
-Acesse a pasta do projeto
+Entre na pasta do projeto
+Bash
 
 cd fincontrol-dashboard
 
-
 Instale as dependências
+Bash
 
 npm install
 
+Inicie o servidor de desenvolvimento
+Bash
 
-Execute o servidor de desenvolvimento
+    npm run dev
 
-npm run dev
+    Acesse no navegador O projeto estará rodando em http://localhost:5173.
 
+🔜 Melhorias Futuras
 
-Acesse no navegador
-O projeto estará rodando em http://localhost:5173.
+    [ ] Implementar React Router DOM para rotas reais.
 
-🔜 Próximos Passos (Roadmap)
+    [ ] Conectar com um Back-End (Node.js/NestJS) ou Firebase.
 
-[ ] Implementar React Router DOM para navegação baseada em URL.
+    [ ] Adicionar autenticação de usuário.
 
-[ ] Adicionar persistência de dados (LocalStorage ou Backend/Firebase).
-
-[ ] Implementar Tema Escuro (Dark Mode).
-
-[ ] Adicionar testes unitários com Jest/Vitest.
+    [ ] Modo Dark/Light theme.
 
 🤝 Contribuindo
 
-Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será muito apreciada.
-
-Faça um Fork do projeto
-
-Crie uma Branch para sua Feature (git checkout -b feature/MinhaFeature)
-
-Adicione suas mudanças (git add .)
-
-Comite suas mudanças (git commit -m 'Adicionando uma feature incrível!')
-
-Faça o Push da Branch (git push origin feature/MinhaFeature)
-
-Abra um Pull Request
-
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 📝 Licença
 
-Distribuído sob a licença MIT. Veja LICENSE para mais informações.
+Este projeto está sob a licença MIT.
 
 Feito com 💙 por Sérgio Timoteo
